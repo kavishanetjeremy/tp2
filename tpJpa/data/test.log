@@ -41,3 +41,4 @@ alter table Home add constraint FK2268FFE3614EFD foreign key (pers_idPerson) ref
 alter table Person_Person add constraint FKB9039F7FEB36CF9D foreign key (amis_idPerson) references Person
 alter table Person_Person add constraint FKB9039F7F1480217E foreign key (Person_idPerson) references Person
 DISCONNECT
+/*C14*/DISCONNECT
