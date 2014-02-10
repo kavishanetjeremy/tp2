@@ -1,4 +1,6 @@
-/*C7*/SET SCHEMA PUBLIC
+/*C4*/SET SCHEMA PUBLIC
+alter table ElectronicDevice drop constraint FK3D854124DBAAAE7
+alter table Heater drop constraint FK809A0ABDE5E587CA
 alter table Home drop constraint FK2268FFE3614EFD
 alter table Person_Person drop constraint FKB9039F7FEB36CF9D
 alter table Person_Person drop constraint FKB9039F7F1480217E
@@ -17,4 +19,6 @@ alter table Heater add constraint FK809A0ABDE5E587CA foreign key (maison_idHome)
 alter table Home add constraint FK2268FFE3614EFD foreign key (pers_idPerson) references Person
 alter table Person_Person add constraint FKB9039F7FEB36CF9D foreign key (amis_idPerson) references Person
 alter table Person_Person add constraint FKB9039F7F1480217E foreign key (Person_idPerson) references Person
+DISCONNECT
+/*C3*/SET SCHEMA PUBLIC
 DISCONNECT
